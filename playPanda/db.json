@@ -1,0 +1,38 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Phantom Runner",
+      "brand": "PlayPanda",
+      "category": "Shoes",
+      "price": 2999,
+      "stock": 12,
+      "image": "https://i.pinimg.com/1200x/dd/26/e0/dd26e03a8ae088c3273fbb7d34dce814.jpg",
+      "description": "Premium lightweight running shoes for daily performance."
+    },
+    {
+      "id": 2,
+      "name": "Velocity X",
+      "brand": "PlayPanda",
+      "category": "Shoes",
+      "price": 3499,
+      "stock": 8,
+      "image": "https://i.pinimg.com/736x/35/2b/af/352baffeb5bc17e893ba7e09d1b07ea8.jpg",
+      "description": "Built for speed, comfort, and modern athletes."
+    },
+    {
+      "id": 3,
+      "name": "Urban Sprint",
+      "brand": "PlayPanda",
+      "category": "Shoes",
+      "price": 2799,
+      "stock": 15,
+      "image": "https://i.pinimg.com/1200x/ba/59/1a/ba591ab5786d46baf2f2f895251bed54.jpg",
+      "description": "Minimal premium sneakers with all-day comfort."
+    }
+  ],
+
+  "users": [],
+
+  "orders": []
+}
