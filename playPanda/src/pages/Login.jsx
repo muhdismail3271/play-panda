@@ -1,0 +1,75 @@
+import { useState } from "react"
+import { useDispatch } from "react-redux"
+import { useNavigate, Link } from "react-router-dom"
+import { getUsers } from "../services/userService"
+import { login } from "../redux/slices/authSlice"
+import { FcGoogle } from "react-icons/fc"
+import { FaFacebook, FaLinkedin } from "react-icons/fa"
+import NavBar from "../components/NavBar"
+import "../styles/Login.css"
+
+export default function Login() {
+    const dispatch  = useDispatch()
+    const navigate  = useNavigate()
+    const [email, setEmail] = useState("")
+    const [pass,  setPass]  = useState("")
+
+    async function handleLogin(event) {
+        event.preventDefault()
+        try {
+            const users = await getUsers()
+            const existingUser = users.find(u => u.email === email && u.pass === pass)
+            if (!existingUser) { alert("Invalid credentials"); return }
+            dispatch(login(existingUser))
+            localStorage.setItem("user", JSON.stringify(existingUser))
+            navigate("/")
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    return (
+        <>
+            <NavBar />
+            <div className="auth-container">
+                <div className="auth-card">
+                    <h1 className="auth-title">Welcome back</h1>
+                    <p className="auth-switch mb-8">Sign in to your account to continue</p>
+
+                    <form className="auth-form" onSubmit={handleLogin}>
+                        <input className="form-input" type="email" placeholder="Email address" value={email}
+                            onChange={(e) => setEmail(e.target.value)} required/>
+                        <input className="form-input" type="password" placeholder="Password" value={pass}
+                            onChange={(e) => setPass(e.target.value)} required/>
+                        <button className="btn-auth-submit" type="submit">
+                            Get Started
+                        </button>
+                    </form>
+
+                    <div className="my-6 flex items-center gap-3.5 text-[13px] text-[#bbbbbb]">
+                        <span className="h-px flex-1 bg-[#e8e8e8]" />
+                        Or sign in with
+                        <span className="h-px flex-1 bg-[#e8e8e8]" />
+                    </div>
+
+                    <div className="flex justify-center gap-4">
+                        <button className="flex h-[52px] w-[52px] cursor-pointer items-center justify-center rounded-[14px] bg-[#f4f4f4] transition-all hover:-translate-y-0.5 hover:bg-[#e8e8e8]" aria-label="Sign in with Google">
+                            <FcGoogle size={22} />
+                        </button>
+                        <button className="flex h-[52px] w-[52px] cursor-pointer items-center justify-center rounded-[14px] bg-[#f4f4f4] transition-all hover:-translate-y-0.5 hover:bg-[#e8e8e8]" aria-label="Sign in with Facebook">
+                            <FaFacebook size={22} color="#1877F2" />
+                        </button>
+                        <button className="flex h-[52px] w-[52px] cursor-pointer items-center justify-center rounded-[14px] bg-[#f4f4f4] transition-all hover:-translate-y-0.5 hover:bg-[#e8e8e8]" aria-label="Sign in with LinkedIn">
+                            <FaLinkedin size={22} color="#0A66C2" />
+                        </button>
+                    </div>
+
+                    <p className="auth-switch mt-7">
+                        Don't have an account?{" "}
+                        <Link to="/register" className="auth-link">Register</Link>
+                    </p>
+                </div>
+            </div>
+        </>
+    )
+}

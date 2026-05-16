@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 170" role="img" aria-labelledby="title desc">
+  <title id="title">Play Panda</title>
+  <desc id="desc">Play Panda wordmark with blue A letters</desc>
+  <text
+    x="50%"
+    y="52%"
+    dominant-baseline="middle"
+    text-anchor="middle"
+    font-family="Arial Black, Montserrat, Arial, sans-serif"
+    font-size="64"
+    font-weight="900"
+    letter-spacing="18"
+  >
+    <tspan fill="#050505">PL</tspan><tspan fill="#2454ff">A</tspan><tspan fill="#050505">Y P</tspan><tspan fill="#2454ff">A</tspan><tspan fill="#050505">NDA</tspan>
+  </text>
+</svg>

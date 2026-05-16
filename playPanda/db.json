@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Phantom Runner",
       "brand": "PlayPanda",
       "category": "Shoes",
@@ -11,7 +11,7 @@
       "description": "Premium lightweight running shoes for daily performance."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Velocity X",
       "brand": "PlayPanda",
       "category": "Shoes",
@@ -21,7 +21,7 @@
       "description": "Built for speed, comfort, and modern athletes."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Urban Sprint",
       "brand": "PlayPanda",
       "category": "Shoes",
@@ -31,8 +31,26 @@
       "description": "Minimal premium sneakers with all-day comfort."
     }
   ],
-
-  "users": [],
-
-  "orders": []
+  "users": [
+    {
+      "name": "Ismail",
+      "email": "ismail@gmail.com",
+      "pass": "12345678",
+      "id": "vcLTAF9pcZQ"
+    },
+    {
+      "name": "Ismail",
+      "email": "ismil@gmail.com",
+      "pass": "12345678",
+      "id": "LCiP3U3fhzU"
+    },
+    {
+      "name": "sample",
+      "email": "sample@mail.com",
+      "pass": "12345678",
+      "id": "5ECNmYU6QP4"
+    }
+  ],
+  "orders": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

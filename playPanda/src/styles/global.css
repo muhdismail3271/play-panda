@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +12,10 @@ html {
 
 body {
   min-height: 100vh;
-  background: linear-gradient(180deg, #f5e7c9 0%, #eef0de 45%, #b5d8d4 100%);
+  background: linear-gradient(160deg, #fdf5e0 0%, #eef4ef 50%, #c2dfe3 100%);
+  background-attachment: fixed;
   color: #050505;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
@@ -25,4 +28,24 @@ button {
   border: none;
   cursor: pointer;
   font-family: inherit;
+}
+
+/* ── Shared page container ─────────────────────────── */
+.page-container {
+  width: 88%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block; /* Ensure it behaves as a block for centering */
+}
+
+/* ── Typography Utilities ─────────────────────────── */
+h1, h2, h3 {
+  color: #0a0a0a;
+  letter-spacing: -0.5px;
+}
+
+/* ── Layout Utilities ─────────────────────────── */
+.section-padding {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
