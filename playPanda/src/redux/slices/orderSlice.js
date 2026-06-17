@@ -1,4 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { getOrders } from "../../services/orderService";
+
+const fetchOrders = createAsyncThunk("orders/fetchOrders", async() => {return await getOrders();})
 
 const initialState = {
     orders: [],
@@ -10,10 +13,19 @@ const orderSlice = createSlice({
     name: "orders",
     initialState,
     reducers:{
-        setOrders: (state, action) => state.orders = action.payload,
-        addOrders: (state,action) => state.orders.push(action.payload)
+        addOrder: (state,action) => state.orders.push(action.payload)
+    },
+    extraReducers: builder => {
+        builder
+            .addCase(fetchOrders.pending, state => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchOrdered.fulfilled, (state , action) => {
+                 
+            })
     }
 })
 
-export const {setOrders , addOrders} = orderSlice.actions;
+export const {setOrders , addOrder} = orderSlice.actions;
 export default orderSlice.reducer

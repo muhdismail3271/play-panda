@@ -9,7 +9,7 @@ const store = configureStore({
         products: productReducer,
         cart: cartReducer,
         auth: authReducer,
-        order: orderReducer,
+        orders: orderReducer,
     }
 })
 

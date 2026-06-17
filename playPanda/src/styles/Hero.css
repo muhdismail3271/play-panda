@@ -78,8 +78,22 @@
   place-items: center;
 }
 
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: clamp(0.4rem, 3vw, 3.2rem);
+  top: 50%;
+  width: min(44vw, 520px);
+  aspect-ratio: 1;
+  transform: translateY(-50%) rotate(-8deg);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 28px 38px rgba(37, 62, 61, 0.16);
+}
+
 .hero-orbit {
   position: absolute;
+  z-index: 1;
   right: clamp(0rem, 2vw, 2.25rem);
   top: 50%;
   width: min(46vw, 540px);
@@ -112,13 +126,12 @@
 
 .hero-shoe {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   display: block;
-  width: min(49vw, 620px);
+  width: min(48vw, 600px);
   max-height: 540px;
   object-fit: contain;
-  transform: translate(-5%, -1%) rotate(-8deg);
-  mix-blend-mode: multiply;
+  transform: translate(-3%, -2%) rotate(-8deg);
   filter: drop-shadow(0 28px 28px rgba(0, 0, 0, 0.22));
 }
 
@@ -154,9 +167,15 @@
     transform: translate(50%, -50%);
   }
 
+  .hero-visual::before {
+    right: 50%;
+    width: min(74vw, 430px);
+    transform: translate(50%, -50%) rotate(-8deg);
+  }
+
   .hero-shoe {
-    width: min(86vw, 520px);
-    transform: translate(0, -1%) rotate(-8deg);
+    width: min(84vw, 500px);
+    transform: translate(0, -2%) rotate(-8deg);
   }
 }
 
@@ -177,7 +196,11 @@
     width: min(76vw, 300px);
   }
 
+  .hero-visual::before {
+    width: min(72vw, 290px);
+  }
+
   .hero-shoe {
-    width: min(90vw, 360px);
+    width: min(88vw, 340px);
   }
 }

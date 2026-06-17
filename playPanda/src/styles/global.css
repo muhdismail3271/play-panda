@@ -30,21 +30,17 @@ button {
   font-family: inherit;
 }
 
-/* ── Shared page container ─────────────────────────── */
 .page-container {
   width: 88%;
   max-width: 1200px;
   margin: 0 auto;
-  display: block; /* Ensure it behaves as a block for centering */
 }
 
-/* ── Typography Utilities ─────────────────────────── */
 h1, h2, h3 {
   color: #0a0a0a;
   letter-spacing: -0.5px;
 }
 
-/* ── Layout Utilities ─────────────────────────── */
 .section-padding {
   padding-top: 60px;
   padding-bottom: 60px;

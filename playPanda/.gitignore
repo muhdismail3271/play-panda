@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Personal documents
+/src/assets/images/UTIITSL_ePAN_R016982186_07052026_195638.pdf
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

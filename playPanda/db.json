@@ -2,22 +2,22 @@
   "products": [
     {
       "id": "1",
-      "name": "Phantom Runner",
-      "brand": "PlayPanda",
-      "category": "Shoes",
-      "price": 2999,
+      "name": "Phantom Gx Ii Academy Fg/Mg",
+      "brand": "Nike",
+      "category": "Footall Shoes",
+      "price": 23328,
       "stock": 12,
-      "image": "https://i.pinimg.com/1200x/dd/26/e0/dd26e03a8ae088c3273fbb7d34dce814.jpg",
+      "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTdytLuIG6hEfMf50elZBXPetipe84n_Ei5PvUiZsEJwL5CBYaaU8oF6Ua90SV_n3g8p2xB2tzcQOOOA4RuB5tH653GsRS3tNsBluYvPDDKMEekrjk5Vt7hsw",
       "description": "Premium lightweight running shoes for daily performance."
     },
     {
       "id": "2",
-      "name": "Velocity X",
-      "brand": "PlayPanda",
-      "category": "Shoes",
-      "price": 3499,
+      "name": "Jordan 1 Retro High OG GS 'Chicago' 2015 - Air Jordans",
+      "brand": "Nike",
+      "category": "Basketball Shoes",
+      "price": 25348,
       "stock": 8,
-      "image": "https://i.pinimg.com/736x/35/2b/af/352baffeb5bc17e893ba7e09d1b07ea8.jpg",
+      "image": "https://i.pinimg.com/1200x/41/a9/90/41a9909ecedf61d1fd39795d6a99cae1.jpg",
       "description": "Built for speed, comfort, and modern athletes."
     },
     {
@@ -25,10 +25,20 @@
       "name": "Urban Sprint",
       "brand": "PlayPanda",
       "category": "Shoes",
-      "price": 2799,
+      "price": 25829,
       "stock": 15,
       "image": "https://i.pinimg.com/1200x/ba/59/1a/ba591ab5786d46baf2f2f895251bed54.jpg",
       "description": "Minimal premium sneakers with all-day comfort."
+    },
+    {
+      "id": "4",
+      "name": "Nike Phantom GX Pro FG - Shadow Pack (SP23) - 10.5",
+      "brand": "Nike",
+      "category": "Footall Shoes",
+      "price": 38678,
+      "stock": 4,
+      "image": "https://i.pinimg.com/1200x/65/e9/f0/65e9f0cbec393a5e8bc9fcba0d7d786f.jpg",
+      "description": "Unleash Your Speed With Every Stride. Designed For Those Who Chase Victory."
     }
   ],
   "users": [

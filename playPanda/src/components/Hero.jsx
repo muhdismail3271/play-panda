@@ -1,7 +1,8 @@
 import "../styles/Hero.css"
+import heroShoe from "../assets/images/65e9f0cbec393a5e8bc9fcba0d7d786f-removebg-preview.png"
+import { Link } from "react-router-dom"
 
 export default function Hero() {
-    const heroShoe = "https://i.pinimg.com/1200x/dd/26/e0/dd26e03a8ae088c3273fbb7d34dce814.jpg"
 
     return (
         <section className="page-container hero-section">
@@ -13,7 +14,9 @@ export default function Hero() {
                     Unleash Your Speed With Every Stride. Designed For Those Who Chase Victory.
                 </p>
                 <button className="btn-hero">
-                    Buy now
+                    <Link to="/product/4">
+                        Buy now
+                    </Link>
                 </button>
             </div>
 
